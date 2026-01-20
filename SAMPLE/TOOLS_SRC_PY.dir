@@ -1,0 +1,47 @@
+ Том в устройстве D имеет метку ASUS-W10P_D
+ Серийный номер тома: 6610-5B6A
+
+ Содержимое папки D:\PROJECTS_LYR\CHECK_LIST\DESKTOP\Python\PROJECTS_PY\TOOLS_SRC_PY
+
+18.01.2026  11:32    <DIR>          .
+18.01.2026  11:32    <DIR>          ..
+13.01.2026  16:14    <DIR>          .ARCH
+02.05.2024  18:27    <DIR>          .devcontainer
+16.01.2026  08:18    <DIR>          .idea
+23.11.2025  10:42    <DIR>          .venv
+11.12.2023  18:29    <DIR>          .vscode
+09.08.2025  13:19    <DIR>          BUILD
+03.08.2024  09:22    <DIR>          config
+03.08.2024  09:22    <DIR>          DATA
+15.01.2026  19:57    <DIR>          dist
+03.08.2024  09:22    <DIR>          DOC
+13.11.2025  09:49    <DIR>          docs
+12.05.2024  10:55    <DIR>          EXE
+19.01.2025  19:43    <DIR>          LOG
+01.12.2025  08:50    <DIR>          lyrpy
+15.01.2026  19:57    <DIR>          lyrpy.egg-info
+03.08.2024  09:22    <DIR>          NOTEBOOKS
+12.05.2024  10:56    <DIR>          OUT
+15.01.2026  14:32    <DIR>          src
+17.03.2025  17:44    <DIR>          tests
+19.01.2025  19:42    <DIR>          WORK
+13.01.2025  15:43            29 852 .editorconfig
+16.01.2025  17:51                74 .env
+28.12.2025  09:55             1 753 .gitignore
+03.08.2024  09:22                 0 .gitmodules
+08.12.2025  16:23               512 .pypirc
+15.10.2025  17:06                 5 .python-version
+15.01.2026  14:19            18 481 build_lyrpy_setuptools.bat
+17.12.2025  12:29            15 063 DEPLOY_PROJECT.bat
+03.08.2024  09:22             1 096 LICENSE
+10.12.2025  12:22            13 415 lyrgit_pull.bat
+18.12.2025  09:54            14 875 lyrgit_push_main.bat
+09.12.2025  14:52               191 lyrpy.ini
+10.11.2025  14:59                38 POETRY.ini
+15.01.2026  09:54               122 PROJECT.ini
+15.01.2026  19:49            37 675 pyproject.toml
+13.01.2026  13:34             1 616 pyproject.toml.orig
+10.11.2025  16:27                24 README.md
+30.11.2025  12:47            80 906 uv.lock
+              18 файлов        215 698 байт
+              22 папок  381 076 303 872 байт свободно
