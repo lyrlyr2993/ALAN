@@ -66,7 +66,7 @@ build-backend = "setuptools.build_meta" # If not defined, then legacy behavior c
 # https://packaging.python.org/specifications/core-metadata/#name
 # Default value: ""
 # Type: str
-name = "TRICKS"
+name = "ALAN"
 # Example usage:
 # name = "TRICKS"
 
@@ -86,7 +86,7 @@ version = "0.1.0"
 # https://packaging.python.org/en/latest/specifications/core-metadata/#description-optional
 # Default value: ""
 # Type: str
-description = "TRICKS"
+description = "ALAN"
 # Example usage:
 # description = "TRICKS"
 
@@ -1005,7 +1005,7 @@ wheel-exclude = []
 
 # Default value: []
 # Type: dict
-my-group = {}
+# my-group = {}
 # Example usage:
 # my-group = {requires-python = ">=3.12"}
 
