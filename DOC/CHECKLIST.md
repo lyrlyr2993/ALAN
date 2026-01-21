@@ -114,20 +114,20 @@ Enter same passphrase again:
 Your identification has been saved in C:\Users\lyr\.ssh\id_ed25519_lyrlyr2993
 Your public key has been saved in C:\Users\lyr\.ssh\id_ed25519_lyrlyr2993.pub
 The key fingerprint is:
-SHA256:0JYkmXtNJObWR9Sn9w6ygW8VNg33POHGoXCfOPWsacs lyrlyr2993 github
+SHA256:2lX8VyUJEGASnBL6FndC+iXbMC51PoiZCJwnvFVRmOU lyrlyr2993 github
 The key's randomart image is:
 +--[ED25519 256]--+
-|      .o+...o.   |
-|      o* +.o .o+o|
-|      ..*o. + BO*|
-|      .+. .. +=BB|
-|       .S  . .o*o|
-|          . o * .|
-|           . B + |
-|            + E .|
-|           .     |
+|    .=X=o.oo.....|
+|o ..o=+o   .  ...|
+|.=.oo.BE+   o   .|
+| .=o X &   . .  .|
+| .. B = S .   . .|
+|   . . o o     . |
+|      . .        |
+|                 |
+|                 |
 +----[SHA256]-----+
-(P313) PS D:\PROJECTS_LYR\CHECK_LIST\DESKTOP\Python\PROJECTS_PY\ALAN> 
+(P313) PS D:\PROJECTS_LYR\CHECK_LIST\DESKTOP\Python\PROJECTS_PY\ALAN>  
 ```
 
 [//]: # (Добавляем ключ на сервер: автоматически или руками)
@@ -135,7 +135,6 @@ The key's randomart image is:
 [//]: # (Подробнее: https://www.securitylab.ru/analytics/562583.php)
 [//]: # (ssh-copy-id -i C:\Users\lyr\.ssh\id_ed25519_lyrlyr2993.pub https://github.com/lyrlyr2993)
 > 
-
 
 > lyrlyr2993 (lyrlyr2993)settings
 > Your personal account
@@ -146,8 +145,8 @@ This is a list of SSH keys associated with your account. Remove any keys that yo
 
 Authentication keys
 SSH
-lyrlyr2993 github
-SHA256:0JYkmXtNJObWR9Sn9w6ygW8VNg33POHGoXCfOPWsacs
+yrlyr2993 github
+SHA256:2lX8VyUJEGASnBL6FndC+iXbMC51PoiZCJwnvFVRmOU
 Added on Jan 21, 2026
 Never used — Read/write
 ```
