@@ -89,8 +89,10 @@ Region
 
     Reository name
         ALAN
+
     Description
         ALAN
+
     Configuration
         Public
 
@@ -108,9 +110,13 @@ Region
     C:\Windows\System32\OpenSSH\ssh-keygen.exe
     
 [//]: (-t ed25519 — выбираем алгоритм &#40;самый современный на сегодня&#41;)
+
 [//]: (-a 100 — усложняем подбор фразы-пароля &#40;100-200 — золотая середина&#41;)
+
 [//]: (-C — комментарий для опознания ключа через пару лет)
+
 [//]: (-f — точно указываем путь к файлу)
+
 [//]: (Подробнее: https://www.securitylab.ru/analytics/562583.php)
     
     ssh-keygen.exe -t ed25519 -a 100 -f C:\Users\lyr\.ssh\id_ed25519_lyrlyr2993 -C "lyrlyr2993 github"  
@@ -140,8 +146,11 @@ The key's randomart image is:
 ```
 
 [//]: (Добавляем ключ на сервер: автоматически или руками)
+
 [//]: (Самый простой способ — утилита ssh-copy-id. Она сама скопирует открытый ключ на сервер и поставит правильные права доступа:)
+
 [//]: (Подробнее: https://www.securitylab.ru/analytics/562583.php)
+
 [//]: (ssh-copy-id -i C:\Users\lyr\.ssh\id_ed25519_lyrlyr2993.pub https://github.com/lyrlyr2993)
 
 > lyrlyr2993 (lyrlyr2993)settings
