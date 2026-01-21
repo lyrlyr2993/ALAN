@@ -95,46 +95,59 @@ Region
 
 [Как сгенерировать SSH-ключ для Windows: пошаговая инструкция](https://timeweb.cloud/tutorials/windows/kak-sgenerirovat-ssh-klyuch-dlya-windows)
 
-    C:\Users\lyr/.ssh/id_ed25519
+    C:\Users\lyr\.ssh\
+    C:\Windows\System32\OpenSSH\ssh-keygen.exe
     
-    C:\Windows\System32\OpenSSH\ssh-keygen.exe -t rsa -b 4096 -C "your_email@example.com"
+[//]: # (-t ed25519 — выбираем алгоритм &#40;самый современный на сегодня&#41;)
+[//]: # (-a 100 — усложняем подбор фразы-пароля &#40;100-200 — золотая середина&#41;)
+[//]: # (-C — комментарий для опознания ключа через пару лет)
+[//]: # (-f — точно указываем путь к файлу)
+[//]: # (Подробнее: https://www.securitylab.ru/analytics/562583.php)
     
-    ssh-keygen.exe
+    ssh-keygen.exe -t ed25519 -a 100 -f C:\Users\lyr\.ssh\id_ed25519_lyrlyr2993 -C "lyrlyr2993 github"  
+
 ```
-(P313) PS D:\PROJECTS_LYR\CHECK_LIST\DESKTOP\Python\PROJECTS_PY\ALAN> ssh-keygen.exe
+(P313) PS D:\PROJECTS_LYR\CHECK_LIST\DESKTOP\Python\PROJECTS_PY\ALAN> ssh-keygen.exe -t ed25519 -a 100 -f C:\Users\lyr\.ssh\id_ed25519_lyrlyr2993 -C "lyrlyr2993 github"
 Generating public/private ed25519 key pair.
-Enter file in which to save the key (C:\Users\lyr/.ssh/id_ed25519): C:\Users\lyr\.ssh\id_lyrlyr2993
 Enter passphrase (empty for no passphrase): 
 Enter same passphrase again: 
-Your identification has been saved in C:\Users\lyr\.ssh\id_lyrlyr2993
-Your public key has been saved in C:\Users\lyr\.ssh\id_lyrlyr2993.pub
+Your identification has been saved in C:\Users\lyr\.ssh\id_ed25519_lyrlyr2993
+Your public key has been saved in C:\Users\lyr\.ssh\id_ed25519_lyrlyr2993.pub
 The key fingerprint is:
-SHA256:HIyl7JQmQNQZ2V5MgYZG46UrhWZDViBAHBZhLKJ5hc0 lyr@ASUS-W10P
+SHA256:0JYkmXtNJObWR9Sn9w6ygW8VNg33POHGoXCfOPWsacs lyrlyr2993 github
 The key's randomart image is:
 +--[ED25519 256]--+
-|BX@O=*.++.       |
-|=*.+E=+*o        |
-|+.=o=oB.o        |
-|oo.o *.. .       |
-| .. . . S        |
-|   .             |
-|                 |
-|                 |
-|                 |
+|      .o+...o.   |
+|      o* +.o .o+o|
+|      ..*o. + BO*|
+|      .+. .. +=BB|
+|       .S  . .o*o|
+|          . o * .|
+|           . B + |
+|            + E .|
+|           .     |
 +----[SHA256]-----+
 (P313) PS D:\PROJECTS_LYR\CHECK_LIST\DESKTOP\Python\PROJECTS_PY\ALAN> 
 ```
 
-lyrlyr2993 (lyrlyr2993)settings
-Your personal account
+[//]: # (Добавляем ключ на сервер: автоматически или руками)
+[//]: # (Самый простой способ — утилита ssh-copy-id. Она сама скопирует открытый ключ на сервер и поставит правильные права доступа:)
+[//]: # (Подробнее: https://www.securitylab.ru/analytics/562583.php)
+[//]: # (ssh-copy-id -i C:\Users\lyr\.ssh\id_ed25519_lyrlyr2993.pub https://github.com/lyrlyr2993)
+> 
+
+
+> lyrlyr2993 (lyrlyr2993)settings
+> Your personal account
+
 ```
 SSH keys
 This is a list of SSH keys associated with your account. Remove any keys that you do not recognize.
 
 Authentication keys
 SSH
-id_ed25519
-SHA256:HIyl7JQmQNQZ2V5MgYZG46UrhWZDViBAHBZhLKJ5hc0
+lyrlyr2993 github
+SHA256:0JYkmXtNJObWR9Sn9w6ygW8VNg33POHGoXCfOPWsacs
 Added on Jan 21, 2026
 Never used — Read/write
 ```
