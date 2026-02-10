@@ -1,4 +1,8 @@
-﻿# 1. Python 3.14.2
+﻿# 0. Powershell 7.5.4
+
+[PowerShell](https://github.com/PowerShell/PowerShell/releases)
+
+# 1. Python 3.14.3
 
 [Python](https://www.python.org/)
 
