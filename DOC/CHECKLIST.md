@@ -57,6 +57,18 @@ GAJWL09BT5RSXDR-eyJsaWNlbnNlSWQiOiJHQUpXTDA5QlQ1UlNYRFIiLCJsaWNlbnNlZU5hbWUiOiJt
 - IDE settings
 > settings.zip
 
+* File/Settings/Python
+> 
+ 
+* File/Settings/Editor
+> 
+ 
+* File/Settings/Plugins
+> 
+
+* File/Settings/Tools/Terminal
+> В параметрах ShellPath указать путь до ранее установленной обновлённой версии PowerShell.
+
 # 4. Markdown
 
 [The Markdown Guide](https://www.markdownguide.org/)
