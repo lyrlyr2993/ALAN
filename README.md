@@ -1,1 +1,1 @@
-﻿# ALAN
+# PATTERN_PY - Каталог PATTERN_PY
