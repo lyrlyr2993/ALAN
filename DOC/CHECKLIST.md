@@ -68,6 +68,8 @@ GAJWL09BT5RSXDR-eyJsaWNlbnNlSWQiOiJHQUpXTDA5QlQ1UlNYRFIiLCJsaWNlbnNlZU5hbWUiOiJt
 
 * File/Settings/Tools/Terminal
 > В параметрах ShellPath указать путь до ранее установленной обновлённой версии PowerShell.
+* Shell path
+> C:\Program Files\PowerShell\7\pwsh.exe
 
 # 4. Markdown
 
