@@ -37,52 +37,53 @@
 # 3. JetBrains
 
 - JetBrains Toolbox App Версия: 3.2, дата выпуска: December 18, 2025
-[JetBrains Toolbox App](https://www.jetbrains.com/ru-ru/toolbox-app/)
+
+    [JetBrains Toolbox App](https://www.jetbrains.com/ru-ru/toolbox-app/)
 
 - PyCharm Версия: 2025.3.2.1 (pycharm-2025.3.2.1.exe)
-[PyCharm](https://www.jetbrains.com/ru-ru/pycharm/)
+   
+    [PyCharm](https://www.jetbrains.com/ru-ru/pycharm/)
 
 - Активировать
     [Генератор лицензий JetBrains](https://jetbrains.ankio.net/license)
-
-    C:\ja-netfilter\scripts\install-current-user.vbs
+    > C:\ja-netfilter\scripts\install-current-user.vbs
 
 - IDE settings
-> settings.zip
+    > settings.zip
 
 * File/Settings/Python/Interpreter
->
+    >
 
 * File/Settings/Editor
->
+    >
 
 * File/Settings/Plugins
 
-[.ignore]()
+    [.ignore]()
 
-[Backup and Sync]()
+    [Backup and Sync]()
 
-[Git](https://plugins.jetbrains.com/plugin/13173-git)
+    [Git](https://plugins.jetbrains.com/plugin/13173-git)
 
-[GitHub](https://plugins.jetbrains.com/plugin/index?xmlId=org.jetbrains.plugins.github&utm_source=product&utm_medium=link&utm_campaign=PY&utm_content=2025.3)
+    [GitHub](https://plugins.jetbrains.com/plugin/index?xmlId=org.jetbrains.plugins.github&utm_source=product&utm_medium=link&utm_campaign=PY&utm_content=2025.3)
 
-[.env](https://plugins.jetbrains.com/plugin/9525--env-files)
+    [.env](https://plugins.jetbrains.com/plugin/9525--env-files)
 
-[Python](https://plugins.jetbrains.com/plugin/index?xmlId=Pythonid&utm_source=product&utm_medium=link&utm_campaign=PY&utm_content=2025.3)
+    [Python](https://plugins.jetbrains.com/plugin/index?xmlId=Pythonid&utm_source=product&utm_medium=link&utm_campaign=PY&utm_content=2025.3)
 
-[Terminal](https://plugins.jetbrains.com/plugin/13123-terminal)
+    [Terminal](https://plugins.jetbrains.com/plugin/13123-terminal)
 
-[Extra ToolWindow Colorful Icons](https://plugins.jetbrains.com/plugin/16604-extra-toolwindow-colorful-icons)
+    [Extra ToolWindow Colorful Icons](https://plugins.jetbrains.com/plugin/16604-extra-toolwindow-colorful-icons)
 
-[GitHub Actions Manager](https://plugins.jetbrains.com/plugin/index?xmlId=com.dsoftware.ghtoolbar&utm_source=product&utm_medium=link&utm_campaign=PY&utm_content=2025.3)
+    [GitHub Actions Manager](https://plugins.jetbrains.com/plugin/index?xmlId=com.dsoftware.ghtoolbar&utm_source=product&utm_medium=link&utm_campaign=PY&utm_content=2025.3)
 
-[GitToolBox](https://plugins.jetbrains.com/plugin/7499-gittoolbox)
+    [GitToolBox](https://plugins.jetbrains.com/plugin/7499-gittoolbox)
 
-[PowerShell](https://plugins.jetbrains.com/plugin/10249-powershell)
+    [PowerShell](https://plugins.jetbrains.com/plugin/10249-powershell)
+   
+    [Writerside](https://plugins.jetbrains.com/plugin/20158-writerside)
 
-[Writerside](https://plugins.jetbrains.com/plugin/20158-writerside)
-
-[Database Tools and SQL](https://plugins.jetbrains.com/plugin/10925-database-tools-and-sql-for-webstorm)
+    [Database Tools and SQL](https://plugins.jetbrains.com/plugin/10925-database-tools-and-sql-for-webstorm)
 
 * File/Settings/Tools/Terminal
 > В параметрах ShellPath указать путь до ранее установленной обновлённой версии PowerShell.
