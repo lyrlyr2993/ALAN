@@ -1,4 +1,4 @@
-﻿# 0. Powershell 7.5.4
+﻿# 0. PowerShell 7.5.4
 
 [PowerShell](https://github.com/PowerShell/PowerShell/releases)
 
@@ -7,11 +7,11 @@
     WinGet — рекомендуемый способ установки PowerShell на клиентах Windows
 
     winget search --id Microsoft.PowerShell
-
+<!--  -->
     winget install --id Microsoft.PowerShell --source winget
 
-    Установка пакета MSI 
-    
+    Установка пакета MSI
+
     https://github.com/PowerShell/PowerShell/releases/download/v7.5.4/PowerShell-7.5.4-win-x64.msi
 
 # 1. Python 3.14.3
@@ -25,7 +25,7 @@
 [UV-cheatsheet:](https://mathspp.com/blog/uv-cheatsheet)
 
 > Install
- 
+
     powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 
     "C:\Program Files\PowerShell\7\pwsh.exe" -WorkingDirectory ~ -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
@@ -35,7 +35,7 @@
     uv venv
 
 # 3. JetBrains
- 
+
 - JetBrains Toolbox App Версия: 3.2, дата выпуска: December 18, 2025
 [JetBrains Toolbox App](https://www.jetbrains.com/ru-ru/toolbox-app/)
 
@@ -57,14 +57,29 @@ GAJWL09BT5RSXDR-eyJsaWNlbnNlSWQiOiJHQUpXTDA5QlQ1UlNYRFIiLCJsaWNlbnNlZU5hbWUiOiJt
 - IDE settings
 > settings.zip
 
-* File/Settings/Python
-> 
- 
+
+
+* File/Settings/Python/Interpreter
+>
+
 * File/Settings/Editor
-> 
- 
+>
+
 * File/Settings/Plugins
-> 
+> [.ignore]
+[Backup and Sync]
+[Git](https://plugins.jetbrains.com/plugin/13173-git)
+[GitHub](https://plugins.jetbrains.com/plugin/index?xmlId=org.jetbrains.plugins.github&utm_source=product&utm_medium=link&utm_campaign=PY&utm_content=2025.3)
+[.env](https://plugins.jetbrains.com/plugin/9525--env-files)
+[Python](https://plugins.jetbrains.com/plugin/index?xmlId=Pythonid&utm_source=product&utm_medium=link&utm_campaign=PY&utm_content=2025.3)
+[Terminal](https://plugins.jetbrains.com/plugin/13123-terminal)
+[Extra ToolWindow Colorful Icons](https://plugins.jetbrains.com/plugin/16604-extra-toolwindow-colorful-icons)
+[GitHub Actions Manager](https://plugins.jetbrains.com/plugin/index?xmlId=com.dsoftware.ghtoolbar&utm_source=product&utm_medium=link&utm_campaign=PY&utm_content=2025.3)
+[GitToolBox](https://plugins.jetbrains.com/plugin/7499-gittoolbox)
+[PowerShell](https://plugins.jetbrains.com/plugin/10249-powershell)
+[Writerside](https://plugins.jetbrains.com/plugin/20158-writerside)
+[Database Tools and SQL](https://plugins.jetbrains.com/plugin/10925-database-tools-and-sql-for-webstorm)
+
 
 * File/Settings/Tools/Terminal
 > В параметрах ShellPath указать путь до ранее установленной обновлённой версии PowerShell.
@@ -101,13 +116,13 @@ GAJWL09BT5RSXDR-eyJsaWNlbnNlSWQiOiJHQUpXTDA5QlQ1UlNYRFIiLCJsaWNlbnNlZU5hbWUiOiJt
     git config --list --show-origin
 
 > Имя пользователя
-> 
+>
 > Первое, что вам следует сделать после установки Git указать ваше имя и адрес электронной почты. Это важно, потому что каждый коммит в Git содержит эту информацию, и она включена в коммиты, передаваемые вами, и не может быть далее изменена:
 
     git config --global user.name "lyrlyr2993"
 
     git config --global user.email lyrlyr2993@gmail.com
-    
+
 Опять же, если указана опция --global, то эти настройки достаточно сделать только один раз, поскольку в этом случае Git будет использовать эти данные для всего, что вы делаете в этой системе. Если для каких-то отдельных проектов вы хотите указать другое имя или электронную почту, можно выполнить эту же команду без параметра --global в каталоге с нужным проектом.
 
 # 6. GitHub
@@ -155,7 +170,7 @@ Region
 
     C:\Users\lyr\.ssh\
     C:\Windows\System32\OpenSSH\ssh-keygen.exe
-    
+
 [//]: (-t ed25519 — выбираем алгоритм &#40;самый современный на сегодня&#41;)
 
 [//]: (-a 100 — усложняем подбор фразы-пароля &#40;100-200 — золотая середина&#41;)
@@ -165,14 +180,14 @@ Region
 [//]: (-f — точно указываем путь к файлу)
 
 [//]: (Подробнее: https://www.securitylab.ru/analytics/562583.php)
-    
-    ssh-keygen.exe -t ed25519 -a 100 -f C:\Users\lyr\.ssh\id_ed25519_lyrlyr2993 -C "lyrlyr2993 github"  
+
+    ssh-keygen.exe -t ed25519 -a 100 -f C:\Users\lyr\.ssh\id_ed25519_lyrlyr2993 -C "lyrlyr2993 github"
 
 ```
 (P313) PS D:\PROJECTS_LYR\CHECK_LIST\DESKTOP\Python\PROJECTS_PY\ALAN> ssh-keygen.exe -t ed25519 -a 100 -f C:\Users\lyr\.ssh\id_ed25519_lyrlyr2993 -C "lyrlyr2993 github"
 Generating public/private ed25519 key pair.
-Enter passphrase (empty for no passphrase): 
-Enter same passphrase again: 
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
 Your identification has been saved in C:\Users\lyr\.ssh\id_ed25519_lyrlyr2993
 Your public key has been saved in C:\Users\lyr\.ssh\id_ed25519_lyrlyr2993.pub
 The key fingerprint is:
@@ -189,12 +204,12 @@ The key's randomart image is:
 |                 |
 |                 |
 +----[SHA256]-----+
-(P313) PS D:\PROJECTS_LYR\CHECK_LIST\DESKTOP\Python\PROJECTS_PY\ALAN>  
+(P313) PS D:\PROJECTS_LYR\CHECK_LIST\DESKTOP\Python\PROJECTS_PY\ALAN>
 ```
 
 [//]: (Добавляем ключ на сервер: автоматически или руками)
 
-[//]: (Самый простой способ — утилита ssh-copy-id. Она сама скопирует открытый ключ на сервер и поставит правильные права доступа:)
+[//]: Самый простой способ — утилита ssh-copy-id. Она сама скопирует открытый ключ на сервер и поставит правильные права доступа
 
 [//]: (Подробнее: https://www.securitylab.ru/analytics/562583.php)
 
