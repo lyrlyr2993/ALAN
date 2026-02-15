@@ -6,9 +6,9 @@
 
     WinGet — рекомендуемый способ установки PowerShell на клиентах Windows
 
-    winget search --id Microsoft.PowerShell
-<!--  -->
-    winget install --id Microsoft.PowerShell --source winget
+    `winget search --id Microsoft.PowerShell`
+
+    'winget install --id Microsoft.PowerShell --source winget'
 
     Установка пакета MSI
 
@@ -26,68 +26,70 @@
 
 > Install
 
-    powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+    `powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"`
 
-    "C:\Program Files\PowerShell\7\pwsh.exe" -WorkingDirectory ~ -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+    `"C:\Program Files\PowerShell\7\pwsh.exe" -WorkingDirectory ~ -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"`
 
 > Create a virtual environment in the current directory:
 
-    uv venv
+    `uv venv`
 
 # 3. JetBrains
 
-- JetBrains Toolbox App Версия: 3.2, дата выпуска: December 18, 2025
+* JetBrains Toolbox App Версия: 3.2, дата выпуска: December 18, 2025
 
     [JetBrains Toolbox App](https://www.jetbrains.com/ru-ru/toolbox-app/)
 
-- PyCharm Версия: 2025.3.2.1 (pycharm-2025.3.2.1.exe)
-   
+* PyCharm Версия: 2025.3.2.1 (pycharm-2025.3.2.1.exe)
+
     [PyCharm](https://www.jetbrains.com/ru-ru/pycharm/)
 
-- Активировать
-    [Генератор лицензий JetBrains](https://jetbrains.ankio.net/license)
-    > C:\ja-netfilter\scripts\install-current-user.vbs
+    Активировать[Генератор лицензий JetBrains](https://jetbrains.ankio.net/license)
+ 
+    `C:\ja-netfilter\scripts\install-current-user.vbs`
 
 - IDE settings
-    > settings.zip
+
+  > settings.zip
+  >
 
 * File/Settings/Python/Interpreter
-    >
-
+ 
 * File/Settings/Editor
-    >
-
+ 
 * File/Settings/Plugins
 
-    [.ignore]()
+  [.ignore]()
 
-    [Backup and Sync]()
+  [Backup and Sync]()
 
-    [Git](https://plugins.jetbrains.com/plugin/13173-git)
+  [Git](https://plugins.jetbrains.com/plugin/13173-git)
 
-    [GitHub](https://plugins.jetbrains.com/plugin/index?xmlId=org.jetbrains.plugins.github&utm_source=product&utm_medium=link&utm_campaign=PY&utm_content=2025.3)
+  [GitHub](https://plugins.jetbrains.com/plugin/index?xmlId=org.jetbrains.plugins.github&utm_source=product&utm_medium=link&utm_campaign=PY&utm_content=2025.3)
 
-    [.env](https://plugins.jetbrains.com/plugin/9525--env-files)
+  [.env](https://plugins.jetbrains.com/plugin/9525--env-files)
 
-    [Python](https://plugins.jetbrains.com/plugin/index?xmlId=Pythonid&utm_source=product&utm_medium=link&utm_campaign=PY&utm_content=2025.3)
+  [Python](https://plugins.jetbrains.com/plugin/index?xmlId=Pythonid&utm_source=product&utm_medium=link&utm_campaign=PY&utm_content=2025.3)
 
-    [Terminal](https://plugins.jetbrains.com/plugin/13123-terminal)
+  [Terminal](https://plugins.jetbrains.com/plugin/13123-terminal)
 
-    [Extra ToolWindow Colorful Icons](https://plugins.jetbrains.com/plugin/16604-extra-toolwindow-colorful-icons)
+  [Extra ToolWindow Colorful Icons](https://plugins.jetbrains.com/plugin/16604-extra-toolwindow-colorful-icons)
 
-    [GitHub Actions Manager](https://plugins.jetbrains.com/plugin/index?xmlId=com.dsoftware.ghtoolbar&utm_source=product&utm_medium=link&utm_campaign=PY&utm_content=2025.3)
+  [GitHub Actions Manager](https://plugins.jetbrains.com/plugin/index?xmlId=com.dsoftware.ghtoolbar&utm_source=product&utm_medium=link&utm_campaign=PY&utm_content=2025.3)
 
-    [GitToolBox](https://plugins.jetbrains.com/plugin/7499-gittoolbox)
+  [GitToolBox](https://plugins.jetbrains.com/plugin/7499-gittoolbox)
 
-    [PowerShell](https://plugins.jetbrains.com/plugin/10249-powershell)
-   
-    [Writerside](https://plugins.jetbrains.com/plugin/20158-writerside)
+  [PowerShell](https://plugins.jetbrains.com/plugin/10249-powershell)
 
-    [Database Tools and SQL](https://plugins.jetbrains.com/plugin/10925-database-tools-and-sql-for-webstorm)
+  [Writerside](https://plugins.jetbrains.com/plugin/20158-writerside)
 
+  [Database Tools and SQL](https://plugins.jetbrains.com/plugin/10925-database-tools-and-sql-for-webstorm)
 * File/Settings/Tools/Terminal
+
 > В параметрах ShellPath указать путь до ранее установленной обновлённой версии PowerShell.
+
 * Shell path
+
 > C:\Program Files\PowerShell\7\pwsh.exe
 
 # 4. Markdown
@@ -106,7 +108,6 @@
 
 [Git - GUI Clients](https://git-scm.com/tools/guis?os=windows)
 
-
 [1.6 Введение - Первоначальная настройка Git](https://git-scm.com/book/ru/v2/Введение-Первоначальная-настройка-Git)
 
 В состав Git входит утилита git config, которая позволяет просматривать и настраивать параметры, контролирующие все аспекты работы Git, а также его внешний вид. Эти параметры могут быть сохранены в трёх местах:
@@ -117,16 +118,15 @@
 
 [//]: Чтобы посмотреть все установленные настройки и узнать где именно они заданы, используйте команду:
 
-    git config --list --show-origin
+git config --list --show-origin
 
 > Имя пользователя
 >
 > Первое, что вам следует сделать после установки Git указать ваше имя и адрес электронной почты. Это важно, потому что каждый коммит в Git содержит эту информацию, и она включена в коммиты, передаваемые вами, и не может быть далее изменена:
 
-    git config --global user.name "lyrlyr2993"
+git config --global user.name "lyrlyr2993"
 
-    git config --global user.email lyrlyr2993@gmail.com
-
+git config --global user.email lyrlyr2993@gmail.com
 Опять же, если указана опция --global, то эти настройки достаточно сделать только один раз, поскольку в этом случае Git будет использовать эти данные для всего, что вы делаете в этой системе. Если для каких-то отдельных проектов вы хотите указать другое имя или электронную почту, можно выполнить эту же команду без параметра --global в каталоге с нужным проектом.
 
 # 6. GitHub
@@ -137,30 +137,27 @@
 
 Email:
 
-    lyrlyr2993@gmail.com
-
+lyrlyr2993@gmail.com
 Username
 
-    lyrlyr2993
-
+lyrlyr2993
 Password
 
-    xxxxxxxxxxxxxxxxx
-
+xxxxxxxxxxxxxxxxx
 Region
 
-    Russian Federation
+Russian Federation
 
 ## 6.2 New repository
 
-    Reository name
-        ALAN
+Reository name
+ALAN
 
-    Description
-        ALAN
+Description
+ALAN
 
-    Configuration
-        Public
+Configuration
+Public
 
 ## 6.3 SSH-ключ
 
@@ -172,9 +169,8 @@ Region
 
 [Как сгенерировать SSH-ключ для Windows: пошаговая инструкция](https://timeweb.cloud/tutorials/windows/kak-sgenerirovat-ssh-klyuch-dlya-windows)
 
-    C:\Users\lyr\.ssh\
-    C:\Windows\System32\OpenSSH\ssh-keygen.exe
-
+C:\Users\lyr\.ssh
+C:\Windows\System32\OpenSSH\ssh-keygen.exe
 [//]: (-t ed25519 — выбираем алгоритм &#40;самый современный на сегодня&#41;)
 
 [//]: (-a 100 — усложняем подбор фразы-пароля &#40;100-200 — золотая середина&#41;)
@@ -185,7 +181,7 @@ Region
 
 [//]: (Подробнее: https://www.securitylab.ru/analytics/562583.php)
 
-    ssh-keygen.exe -t ed25519 -a 100 -f C:\Users\lyr\.ssh\id_ed25519_lyrlyr2993 -C "lyrlyr2993 github"
+ssh-keygen.exe -t ed25519 -a 100 -f C:\Users\lyr\.ssh\id_ed25519_lyrlyr2993 -C "lyrlyr2993 github"
 
 ```
 (P313) PS D:\PROJECTS_LYR\CHECK_LIST\DESKTOP\Python\PROJECTS_PY\ALAN> ssh-keygen.exe -t ed25519 -a 100 -f C:\Users\lyr\.ssh\id_ed25519_lyrlyr2993 -C "lyrlyr2993 github"
