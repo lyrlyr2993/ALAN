@@ -4,13 +4,13 @@
 
 Установка PowerShell в Windows
 
-    WinGet — рекомендуемый способ установки PowerShell на клиентах Windows
+> WinGet — рекомендуемый способ установки PowerShell на клиентах Windows
 
-    `winget search --id Microsoft.PowerShell`
+    winget search --id Microsoft.PowerShell
 
-    'winget install --id Microsoft.PowerShell --source winget'
+    winget install --id Microsoft.PowerShell --source winget
 
-    Установка пакета MSI
+> Установка пакета MSI
 
     https://github.com/PowerShell/PowerShell/releases/download/v7.5.4/PowerShell-7.5.4-win-x64.msi
 
@@ -24,15 +24,15 @@
 
 [UV-cheatsheet:](https://mathspp.com/blog/uv-cheatsheet)
 
-> Install
+> Install UV
 
-    `powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"`
+    powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 
-    `"C:\Program Files\PowerShell\7\pwsh.exe" -WorkingDirectory ~ -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"`
+    "C:\Program Files\PowerShell\7\pwsh.exe" -WorkingDirectory ~ -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 
 > Create a virtual environment in the current directory:
 
-    `uv venv`
+    uv venv
 
 # 3. JetBrains
 
@@ -118,13 +118,13 @@
 
 [//]: Чтобы посмотреть все установленные настройки и узнать где именно они заданы, используйте команду:
 
-git config --list --show-origin
+    git config --list --show-origin
 
 > Имя пользователя
->
+
 > Первое, что вам следует сделать после установки Git указать ваше имя и адрес электронной почты. Это важно, потому что каждый коммит в Git содержит эту информацию, и она включена в коммиты, передаваемые вами, и не может быть далее изменена:
 
-git config --global user.name "lyrlyr2993"
+    git config --global user.name "lyrlyr2993"
 
 git config --global user.email lyrlyr2993@gmail.com
 Опять же, если указана опция --global, то эти настройки достаточно сделать только один раз, поскольку в этом случае Git будет использовать эти данные для всего, что вы делаете в этой системе. Если для каких-то отдельных проектов вы хотите указать другое имя или электронную почту, можно выполнить эту же команду без параметра --global в каталоге с нужным проектом.
@@ -169,64 +169,75 @@ Public
 
 [Как сгенерировать SSH-ключ для Windows: пошаговая инструкция](https://timeweb.cloud/tutorials/windows/kak-sgenerirovat-ssh-klyuch-dlya-windows)
 
-C:\Users\lyr\.ssh
-C:\Windows\System32\OpenSSH\ssh-keygen.exe
-[//]: (-t ed25519 — выбираем алгоритм &#40;самый современный на сегодня&#41;)
+Каталог ssh
+    
+> C:\Users\lyr\.ssh
+    
+Генерация ssh
 
-[//]: (-a 100 — усложняем подбор фразы-пароля &#40;100-200 — золотая середина&#41;)
+    C:\Windows\System32\OpenSSH\ssh-keygen.exe
 
-[//]: (-C — комментарий для опознания ключа через пару лет)
+    [//]: (-t ed25519 — выбираем алгоритм &#40;самый современный на сегодня&#41;)
 
-[//]: (-f — точно указываем путь к файлу)
+    [//]: (-a 100 — усложняем подбор фразы-пароля &#40;100-200 — золотая середина&#41;)
 
-[//]: (Подробнее: https://www.securitylab.ru/analytics/562583.php)
+    [//]: (-C — комментарий для опознания ключа через пару лет)
 
-ssh-keygen.exe -t ed25519 -a 100 -f C:\Users\lyr\.ssh\id_ed25519_lyrlyr2993 -C "lyrlyr2993 github"
+    [//]: (-f — точно указываем путь к файлу)
 
-```
-(P313) PS D:\PROJECTS_LYR\CHECK_LIST\DESKTOP\Python\PROJECTS_PY\ALAN> ssh-keygen.exe -t ed25519 -a 100 -f C:\Users\lyr\.ssh\id_ed25519_lyrlyr2993 -C "lyrlyr2993 github"
-Generating public/private ed25519 key pair.
-Enter passphrase (empty for no passphrase):
-Enter same passphrase again:
-Your identification has been saved in C:\Users\lyr\.ssh\id_ed25519_lyrlyr2993
-Your public key has been saved in C:\Users\lyr\.ssh\id_ed25519_lyrlyr2993.pub
-The key fingerprint is:
-SHA256:2lX8VyUJEGASnBL6FndC+iXbMC51PoiZCJwnvFVRmOU lyrlyr2993 github
-The key's randomart image is:
-+--[ED25519 256]--+
-|    .=X=o.oo.....|
-|o ..o=+o   .  ...|
-|.=.oo.BE+   o   .|
-| .=o X &   . .  .|
-| .. B = S .   . .|
-|   . . o o     . |
-|      . .        |
-|                 |
-|                 |
-+----[SHA256]-----+
-(P313) PS D:\PROJECTS_LYR\CHECK_LIST\DESKTOP\Python\PROJECTS_PY\ALAN>
-```
+    [//]: (Подробнее: https://www.securitylab.ru/analytics/562583.php)
 
-[//]: (Добавляем ключ на сервер: автоматически или руками)
+    ssh-keygen.exe -t ed25519 -a 100 -f C:\Users\lyr\.ssh\id_ed25519_lyrlyr2993 -C "lyrlyr2993 github"
 
-[//]: Самый простой способ — утилита ssh-copy-id. Она сама скопирует открытый ключ на сервер и поставит правильные права доступа
+    ```
+    (P313) PS D:\PROJECTS_LYR\CHECK_LIST\DESKTOP\Python\PROJECTS_PY\ALAN> ssh-keygen.exe -t ed25519 -a 100 -f C:\Users\lyr\.ssh\id_ed25519_lyrlyr2993 -C "lyrlyr2993 github"
+    Generating public/private ed25519 key pair.
+    Enter passphrase (empty for no passphrase):
+    Enter same passphrase again:
+    Your identification has been saved in C:\Users\lyr\.ssh\id_ed25519_lyrlyr2993
+    Your public key has been saved in C:\Users\lyr\.ssh\id_ed25519_lyrlyr2993.pub
+    The key fingerprint is:
+    SHA256:2lX8VyUJEGASnBL6FndC+iXbMC51PoiZCJwnvFVRmOU lyrlyr2993 github
+    The key's randomart image is:
+    +--[ED25519 256]--+
+    |    .=X=o.oo.....|
+    |o ..o=+o   .  ...|
+    |.=.oo.BE+   o   .|
+    | .=o X &   . .  .|
+    | .. B = S .   . .|
+    |   . . o o     . |
+    |      . .        |
+    |                 |
+    |                 |
+    +----[SHA256]-----+
+    (P313) PS D:\PROJECTS_LYR\CHECK_LIST\DESKTOP\Python\PROJECTS_PY\ALAN>
+    ```
+    
+    [//]: (Добавляем ключ на сервер: автоматически или руками)
+    
+    [//]: Самый простой способ — утилита ssh-copy-id. Она сама скопирует открытый ключ на сервер и поставит правильные права доступа
+    
+    [//]: (Подробнее: https://www.securitylab.ru/analytics/562583.php)
+    
+    [//]: (ssh-copy-id -i C:\Users\lyr\.ssh\id_ed25519_lyrlyr2993.pub https://github.com/lyrlyr2993) НЕ РАБОТАЕТ!!!
+    
+    > lyrlyr2993 (lyrlyr2993)settings
+    
+    > Your personal account
+    
+    ```
+    SSH keys
+    This is a list of SSH keys associated with your account. Remove any keys that you do not recognize.
+    
+    Authentication keys
+    SSH
+    yrlyr2993 github
+    SHA256:2lX8VyUJEGASnBL6FndC+iXbMC51PoiZCJwnvFVRmOU
+    Added on Jan 21, 2026
+    Never used — Read/write
+    ```
 
-[//]: (Подробнее: https://www.securitylab.ru/analytics/562583.php)
 
-[//]: (ssh-copy-id -i C:\Users\lyr\.ssh\id_ed25519_lyrlyr2993.pub https://github.com/lyrlyr2993) НЕ РАБОТАЕТ!!!
 
-> lyrlyr2993 (lyrlyr2993)settings
 
-> Your personal account
 
-```
-SSH keys
-This is a list of SSH keys associated with your account. Remove any keys that you do not recognize.
-
-Authentication keys
-SSH
-yrlyr2993 github
-SHA256:2lX8VyUJEGASnBL6FndC+iXbMC51PoiZCJwnvFVRmOU
-Added on Jan 21, 2026
-Never used — Read/write
-```
