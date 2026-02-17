@@ -74,6 +74,7 @@
     uv publish                  Publish your packageable project to PyPI
 
     uv version                  Check your project version
+    uv version <version>        Set your project version
     uv version --bump major     Bump project major version (e.g., 0.3.2 -> 1.0.0)
     uv version --bump minor --bump beta 
                                 Bump minor version into a beta (e.g., 1.0.0 -> 1.1.0b1 or 1.1.0b1 -> 1.1.0b2)
