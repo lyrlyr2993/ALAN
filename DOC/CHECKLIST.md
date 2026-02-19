@@ -8,9 +8,9 @@ Outline – это ПО, разработанное командой Jigsaw, с 
 
 Outline – это ПО с открытым исходным кодом, использующее протокол Shadowsocks. Вы можете присоединиться к работе над проектом на платформе GitHub, а также обсудить его с другими пользователями на сайте Reddit.
 
-[Outline клиент] (https://getoutline.org/intl/ru/get-started/)
+[Outline клиент](https://getoutline.org/intl/ru/get-started/)
 
-[Free keys] (https://outlinekeys.com/protocols/outline/)
+[Free keys](https://outlinekeys.com/protocols/outline/)
 
 лучше использовать сервера Netherlands
 
