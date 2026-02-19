@@ -1,4 +1,20 @@
-﻿# 0. PowerShell 7.5.4
+﻿# 0. VPN
+
+## Outline 
+ 
+Версия 1.17.0 (487726)
+
+Outline – это ПО, разработанное командой Jigsaw, с помощью которого каждый может создать собственную сеть VPN, управлять ей и предоставлять к ней доступ другим пользователям. Outline не так просто заблокировать. Чтобы узнать, как начать работу с Outline, перейдите на страницу getoutline.org.
+
+Outline – это ПО с открытым исходным кодом, использующее протокол Shadowsocks. Вы можете присоединиться к работе над проектом на платформе GitHub, а также обсудить его с другими пользователями на сайте Reddit.
+
+[Outline клиент] (https://getoutline.org/intl/ru/get-started/)
+
+[Free keys] (https://outlinekeys.com/protocols/outline/)
+
+лучше использовать сервера Netherlands
+
+# 0. PowerShell 7.5.4
 
 [PowerShell](https://github.com/PowerShell/PowerShell/releases)
 

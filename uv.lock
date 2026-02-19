@@ -11,7 +11,7 @@ dependencies = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "pip", specifier = ">=26.0.1" }]
+requires-dist = [{ name = "pip", specifier = "==26.0.1" }]
 
 [[package]]
 name = "pip"
