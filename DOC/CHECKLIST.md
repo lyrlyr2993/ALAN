@@ -1,7 +1,7 @@
 ﻿# 0. VPN
 
-## Outline 
- 
+## Outline
+
 Версия 1.17.0 (487726)
 
 Outline – это ПО, разработанное командой Jigsaw, с помощью которого каждый может создать собственную сеть VPN, управлять ей и предоставлять к ней доступ другим пользователям. Outline не так просто заблокировать. Чтобы узнать, как начать работу с Outline, перейдите на страницу getoutline.org.
@@ -74,27 +74,27 @@ Outline – это ПО с открытым исходным кодом, исп�
     uv publish                  Publish your packageable project to PyPI
     uv version                  Check your project version
     uv version --bump major     Bump project major version (e.g., 0.3.2 -> 1.0.0)
-    uv version --bump minor --bump beta 
+    uv version --bump minor --bump beta
                                 Bump minor version into a beta (e.g., 1.0.0 -> 1.1.0b1 or 1.1.0b1 -> 1.1.0b2)
-    uv version --bump rc        Bump version into release candidate (e.g., 1.1.0b1 -> 1.1.0rc1 or 
+    uv version --bump rc        Bump version into release candidate (e.g., 1.1.0b1 -> 1.1.0rc1 or
                                 1.1.0rc1 -> 1.1.0rc2)
     uv version --bump stable    Turn into a stable version (e.g., 1.1.0rc1 -> 1.1.0
 
 4.Managing tools
 
     uv tool run pytest          Run pytest in an isolated environment
-    uv tool run textual-demo --from textual 
+    uv tool run textual-demo --from textual
                                 Run the command textual-demo from the package textual
     uvx ...                     Alias for uv tool run ...
     uv tool install ruff        Install ruff in an isolated environment but make it globally available
-    uv tool install --with dep ...  
+    uv tool install --with dep ...
                                 Install the given tool with extra dependencies (e.g., install a tool with its plugins)
     uv tool list                List all tools installed
     uv tool upgrade ruff        Upgrade the ruff tool
     uv tool upgrade --all       Upgrade all tools
     uv tool uninstall ruff      Uninstall ruff
     uv tool install -e .        Install the current packageable project in editable mode
-    
+
 5.Working with scripts
 
     uv init --script myscript.py
@@ -146,7 +146,7 @@ Outline – это ПО с открытым исходным кодом, исп�
     [PyCharm](https://www.jetbrains.com/ru-ru/pycharm/)
 
     Активировать[Генератор лицензий JetBrains](https://jetbrains.ankio.net/license)
- 
+
     `C:\ja-netfilter\scripts\install-current-user.vbs`
 
 - IDE settings
@@ -155,9 +155,9 @@ Outline – это ПО с открытым исходным кодом, исп�
   >
 
 * File/Settings/Python/Interpreter
- 
+
 * File/Settings/Editor
- 
+
 * File/Settings/Plugins
 
   [.ignore]()
@@ -271,9 +271,9 @@ Public
 [Как сгенерировать SSH-ключ для Windows: пошаговая инструкция](https://timeweb.cloud/tutorials/windows/kak-sgenerirovat-ssh-klyuch-dlya-windows)
 
 Каталог ssh
-    
+
 > C:\Users\lyr\.ssh
-    
+
 Генерация ssh
 
     C:\Windows\System32\OpenSSH\ssh-keygen.exe
@@ -313,23 +313,23 @@ Public
     +----[SHA256]-----+
     (P313) PS D:\PROJECTS_LYR\CHECK_LIST\DESKTOP\Python\PROJECTS_PY\ALAN>
     ```
-    
+
     [//]: (Добавляем ключ на сервер: автоматически или руками)
-    
+
     [//]: Самый простой способ — утилита ssh-copy-id. Она сама скопирует открытый ключ на сервер и поставит правильные права доступа
-    
+
     [//]: (Подробнее: https://www.securitylab.ru/analytics/562583.php)
-    
+
     [//]: (ssh-copy-id -i C:\Users\lyr\.ssh\id_ed25519_lyrlyr2993.pub https://github.com/lyrlyr2993) НЕ РАБОТАЕТ!!!
-    
+
     > lyrlyr2993 (lyrlyr2993)settings
-    
+
     > Your personal account
-    
+
     ```
     SSH keys
     This is a list of SSH keys associated with your account. Remove any keys that you do not recognize.
-    
+
     Authentication keys
     SSH
     yrlyr2993 github
